@@ -6,7 +6,7 @@ This is a simple API built using the library [plumber.R](https://www.rplumber.io
 
 ### Using the API
 
-To use the API, simply call the API endpoints using the appropriate HTTP method. The API is hosted on https://freeman-lab-node-api.herokuapp.com/api. For example, to reach the /test endpoint, access https://freeman-lab-node-api.herokuapp.com/api/test and you should receive a response of "hello world".
+To use the API, simply call the API endpoints using the appropriate HTTP method. The API is hosted on ```https://freeman-lab-node-api.herokuapp.com/api```. For example, to reach the ```/test``` endpoint, access ```https://freeman-lab-node-api.herokuapp.com/api/test``` and you should receive a response of "hello world".
 
 ### Developing and Testing the API
 
@@ -17,19 +17,27 @@ To run this API locally for testing and development purposes, make a copy of thi
 This code is built and deployed by Heroku using a Docker container - if you haven't already, download and install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
 First, login to the freeman-lab-nyu Heroku account by using the Heroku CLI. In the CL of the project root, type the following and enter the credentials when prompted:
-```heroku login```
+```
+heroku login
+```
 
 To build, you need to push the Docker container:
-```heroku container:push web -a freeman-lab-r-api```
+```
+heroku container:push web -a freeman-lab-r-api
+```
 
 Finally, release the container to deploy:
-```heroku container:release web --app freeman-lab-r-api```
+```
+heroku container:release web --app freeman-lab-r-api
+```
 
 Find more on Docker Containers in Heroku [here](https://devcenter.heroku.com/articles/container-registry-and-runtime).
 
 ## API Endpoints
 
-```/maxdev```
+```
+/maxdev
+```
 A POST endpoint that requires the path to a .mt file as a parameter and returns MAD (maximum deviation), AUC (area under curve), and RT (response time) for the mt data. Uses mousetrap.R library for data processing, see [here](https://pascalkieslich.github.io/mousetrap/reference/index.html) for further reference.
 
 ## Built with:
