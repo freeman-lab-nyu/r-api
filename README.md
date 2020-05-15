@@ -6,7 +6,7 @@ This is a simple API built using the library [plumber.R](https://www.rplumber.io
 
 ### Using the API
 
-To use the API, simply call the API endpoints using the appropriate HTTP method. The API is hosted on ```https://freeman-lab-node-api.herokuapp.com/api```. For example, to reach the ```/test``` endpoint, access ```https://freeman-lab-node-api.herokuapp.com/api/test``` and you should receive a response of "hello world".
+To use the API, simply call the API endpoints using the appropriate HTTP method. The API is hosted on ```https://freeman-lab-r-api.herokuapp.com/api```. For example, to reach the ```/test``` endpoint, access ```https://freeman-lab-r-api.herokuapp.com/api/test``` and you should receive a response of "hello world".
 
 ### Developing and Testing the API
 
